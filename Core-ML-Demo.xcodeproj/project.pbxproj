@@ -14,6 +14,7 @@
 		0545DCCF2A8CDC250044B511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0545DCCE2A8CDC250044B511 /* Assets.xcassets */; };
 		0545DCD22A8CDC250044B511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0545DCD02A8CDC250044B511 /* LaunchScreen.storyboard */; };
 		0545DCDA2A8CE61C0044B511 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0545DCD92A8CE61B0044B511 /* GoogLeNetPlaces.mlmodel */; };
+		0545DCDC2A8CEABA0044B511 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0545DCDB2A8CEABA0044B511 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0545DCD12A8CDC250044B511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0545DCD32A8CDC250044B511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0545DCD92A8CE61B0044B511 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		0545DCDB2A8CEABA0044B511 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0545DCCE2A8CDC250044B511 /* Assets.xcassets */,
 				0545DCD02A8CDC250044B511 /* LaunchScreen.storyboard */,
 				0545DCD32A8CDC250044B511 /* Info.plist */,
+				0545DCDB2A8CEABA0044B511 /* Extensions.swift */,
 			);
 			path = "Core-ML-Demo";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0545DCDC2A8CEABA0044B511 /* Extensions.swift in Sources */,
 				0545DCCA2A8CDC240044B511 /* ViewController.swift in Sources */,
 				0545DCC62A8CDC240044B511 /* AppDelegate.swift in Sources */,
 				0545DCC82A8CDC240044B511 /* SceneDelegate.swift in Sources */,
