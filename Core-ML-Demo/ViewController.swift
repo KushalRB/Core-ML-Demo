@@ -30,6 +30,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         view.addSubview(imageView)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTapImage))
+        tap.numberOfTapsRequired = 1
+        imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tap)
     }
     
@@ -54,7 +56,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         present(picker, animated: true)
     }
     
-    private func anlayzeImage(image : UIImage?){
+    private func analyzeImage(image : UIImage?){
         guard let buffer = image?.resize(size: CGSize(width: 224, height: 224))?.getCVPixelBuffer() else{
             return
         }
@@ -72,11 +74,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        //cancelled
+        picker.dismiss(animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        //image picker
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else{
+            return
+        }
+        imageView.image = image
+        analyzeImage(image: image)
+        picker.dismiss(animated: true)
+        
     }
     
 

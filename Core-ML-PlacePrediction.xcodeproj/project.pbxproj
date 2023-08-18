@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0545DCC22A8CDC240044B511 /* Core-ML-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core-ML-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0545DCC22A8CDC240044B511 /* Core-ML-PlacePrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core-ML-PlacePrediction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0545DCC52A8CDC240044B511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0545DCC72A8CDC240044B511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0545DCC92A8CDC240044B511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		0545DCC32A8CDC240044B511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0545DCC22A8CDC240044B511 /* Core-ML-Demo.app */,
+				0545DCC22A8CDC240044B511 /* Core-ML-PlacePrediction.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0545DCC12A8CDC240044B511 /* Core-ML-Demo */ = {
+		0545DCC12A8CDC240044B511 /* Core-ML-PlacePrediction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0545DCD62A8CDC250044B511 /* Build configuration list for PBXNativeTarget "Core-ML-Demo" */;
+			buildConfigurationList = 0545DCD62A8CDC250044B511 /* Build configuration list for PBXNativeTarget "Core-ML-PlacePrediction" */;
 			buildPhases = (
 				0545DCBE2A8CDC240044B511 /* Sources */,
 				0545DCBF2A8CDC240044B511 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "Core-ML-Demo";
+			name = "Core-ML-PlacePrediction";
 			productName = "Core-ML-Demo";
-			productReference = 0545DCC22A8CDC240044B511 /* Core-ML-Demo.app */;
+			productReference = 0545DCC22A8CDC240044B511 /* Core-ML-PlacePrediction.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0545DCBD2A8CDC240044B511 /* Build configuration list for PBXProject "Core-ML-Demo" */;
+			buildConfigurationList = 0545DCBD2A8CDC240044B511 /* Build configuration list for PBXProject "Core-ML-PlacePrediction" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0545DCC12A8CDC240044B511 /* Core-ML-Demo */,
+				0545DCC12A8CDC240044B511 /* Core-ML-PlacePrediction */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +298,7 @@
 				DEVELOPMENT_TEAM = MBJ4L84TWC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Core-ML-Demo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Core-ML-PlacePrediction";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fusemachines.kushal-rajbhandari.Core-ML-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fusemachines.kushal-rajbhandari.Core-ML-PlacePrediction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,6 +327,7 @@
 				DEVELOPMENT_TEAM = MBJ4L84TWC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Core-ML-Demo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Core-ML-PlacePrediction";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fusemachines.kushal-rajbhandari.Core-ML-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fusemachines.kushal-rajbhandari.Core-ML-PlacePrediction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -347,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0545DCBD2A8CDC240044B511 /* Build configuration list for PBXProject "Core-ML-Demo" */ = {
+		0545DCBD2A8CDC240044B511 /* Build configuration list for PBXProject "Core-ML-PlacePrediction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0545DCD42A8CDC250044B511 /* Debug */,
@@ -356,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0545DCD62A8CDC250044B511 /* Build configuration list for PBXNativeTarget "Core-ML-Demo" */ = {
+		0545DCD62A8CDC250044B511 /* Build configuration list for PBXNativeTarget "Core-ML-PlacePrediction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0545DCD72A8CDC250044B511 /* Debug */,
