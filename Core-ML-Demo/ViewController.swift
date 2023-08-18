@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreML
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
@@ -29,14 +30,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         view.addSubview(imageView)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTapImage))
+        tap.numberOfTapsRequired = 1
+        imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tap)
-    }
-    
-    @objc func didTapImage(){
-        let picker = UIImagePickerController()
-        picker.sourceType = .photoLibrary
-        picker.delegate = self
-        present(picker, animated: true)
     }
     
     override func viewDidLayoutSubviews() {
@@ -53,12 +49,42 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             height: 60)
     }
     
+    @objc func didTapImage(){
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    
+    private func analyzeImage(image : UIImage?){
+        guard let buffer = image?.resize(size: CGSize(width: 224, height: 224))?.getCVPixelBuffer() else{
+            return
+        }
+        
+        do{
+            let config = MLModelConfiguration()
+            let model = try GoogLeNetPlaces(configuration: config)
+            let input = GoogLeNetPlacesInput(sceneImage: buffer)
+            let output = try model.prediction(input: input)
+            let text = output.sceneLabel
+            label.text = text
+        }catch{
+            
+        }
+    }
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        //cancelled
+        picker.dismiss(animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        //image picker
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else{
+            return
+        }
+        imageView.image = image
+        analyzeImage(image: image)
+        picker.dismiss(animated: true)
+        
     }
     
 
