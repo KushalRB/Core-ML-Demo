@@ -44,7 +44,7 @@
 		0545DCB92A8CDC240044B511 = {
 			isa = PBXGroup;
 			children = (
-				0545DCC42A8CDC240044B511 /* Core-ML-Demo */,
+				0545DCC42A8CDC240044B511 /* Core-ML-PlacePrediction */,
 				0545DCC32A8CDC240044B511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,7 +57,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0545DCC42A8CDC240044B511 /* Core-ML-Demo */ = {
+		0545DCC42A8CDC240044B511 /* Core-ML-PlacePrediction */ = {
 			isa = PBXGroup;
 			children = (
 				0545DCD92A8CE61B0044B511 /* GoogLeNetPlaces.mlmodel */,
@@ -70,7 +70,7 @@
 				0545DCD32A8CDC250044B511 /* Info.plist */,
 				0545DCDB2A8CEABA0044B511 /* Extensions.swift */,
 			);
-			path = "Core-ML-Demo";
+			path = "Core-ML-PlacePrediction";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
